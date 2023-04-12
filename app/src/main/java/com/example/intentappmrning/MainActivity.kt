@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         }
         btnEmail.setOnClickListener {
             val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","elikibetael4@gmail.com",null))
-            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"JOB APPPLICATION")
-            emailIntent.putExtra(Intent.EXTRA_TEXT,"Dear Sir/Madam, I'm applying for an Underwater Ceramics Tectician")
+            emailIntent.putExtra(Intent.EXTRA_SUBJECT,"JOB APPLICATION")
+            emailIntent.putExtra(Intent.EXTRA_TEXT,"Dear Sir/Madam, I'm applying for an Underwater Ceramics Technician")
             startActivity(Intent.createChooser(emailIntent,"Send email..."))
         }
         btnCamera.setOnClickListener {
